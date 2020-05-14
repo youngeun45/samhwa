@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>삼화페인트 모바일</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=375, user-scalable=no">
+
+	<!-- style -->
+	<link rel="stylesheet" href="../static/css/samhwa.css" media="all">
+
+	<!-- javascript -->
+	<script src="../static/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="../static/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../static/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="../static/js/plugins.js"></script>
+	<script src="../static/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div data-include-html="../include/header.html"></div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="contents">
+		<div id="pageTop" class="visual">
+			<div class="bg" style="background-image:url(../static/images/visual/visual_06_04.png);"></div>
+			<div>
+				<h2 id="pageTit">삼화앤피플</h2>
+				<div class="page_txt">삼화앤피플은 삼화페인트 소식을 <br>전하는 소식지입니다.</div>
+			</div>
+		</div>
+		<div class="inner">
+			<div class="apply_letter_area">
+				<strong>삼화페인트 소식지를 <br/>신청하세요!</strong>
+				<p>우편 신청</p>
+				<a href="#popRequest" class="list_link ui-pop-open">삼화페인트 신청하기</a><!-- ui-pop-open 클래스로 팝업을 열려면 href 값에 팝업 id 입력 -->
+			</div>
+		</div>
+		<div class="inner gray">
+			<div class="fake_select top_no_inp">
+				<span>전체</span>
+				<select>
+					<option value="">전체</option>
+					<option value="">2019</option>
+					<option value="">2018</option>
+					<option value="">2017</option>
+					<option value="">2016</option>
+					<option value="">2015</option>
+					<option value="">2014</option>
+					<option value="">2013</option>
+					<option value="">2012</option>
+				</select>
+			</div>
+			<div class="people_area">
+				<ul>
+					<li>
+						<h3>Autumn 2018 <span>vol. 31</span></h3>
+						<div class="img_box"><img src="../static/images/contents/@img_sampeople.jpg" alt="소식지 표지 이미지"></div>
+						<a href="#" class="list_link">해당 소식지 보러가기</a>
+					</li>
+					<li>
+						<h3>Autumn 2018 <span>vol. 31</span></h3>
+						<div class="img_box"><img src="../static/images/contents/@img_sampeople.jpg" alt="소식지 표지 이미지"></div>
+						<a href="#" class="list_link">해당 소식지 보러가기</a>
+					</li>
+					<li>
+						<h3>Autumn 2018 <span>vol. 31</span></h3>
+						<div class="img_box"><img src="../static/images/contents/@img_sampeople.jpg" alt="소식지 표지 이미지"></div>
+						<a href="#" class="list_link">해당 소식지 보러가기</a>
+					</li>
+				</ul>
+			</div>
+			<div class="paging">
+				<a href="#" class="btn btn_fst"><span>처음 페이지로</span></a>
+				<a href="#" class="btn btn_prev"><span>이전 페이지로</span></a>
+				<span>
+					<a href="#">21</a>
+					<a href="#"><strong>22</strong></a>
+					<a href="#">23</a>
+					<a href="#">24</a>
+				</span>
+				<a href="#" class="btn btn_next"><span>다음 페이지로</span></a>
+				<a href="#" class="btn btn_last"><span>마지막 페이지로</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div data-include-html="../include/footer.html"></div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+
+<!-- 신청팝업 -->
+<div id="popRequest" class="pop_wrap large">
+	<article class="popup">
+		<div class="pop_head">
+			<h1>삼화페인트 소식지를 <br>신청하세요!</h1>
+		</div>
+		<div class="pop_cont">
+			<dl class="dl form">
+				<dt><strong>이름</strong></dt>
+				<dd>
+					<input type="text" class="input h50" title="이름" placeholder="이름을 입력해 주세요">
+				</dd>
+			</dl>
+			<dl class="dl form">
+				<dt><strong>연락처</strong></dt>
+				<dd>
+					<input type="text" class="input h50" title="연락처" placeholder="이름을 입력해 주세요">
+				</dd>
+			</dl>
+			<dl class="dl form">
+				<dt><strong>주소</strong></dt>
+				<dd>
+					<div class="input_flex">
+						<span class="wid2"><input class="input h50" type="text" title="우편번호" placeholder="우편번호"></span>
+						<span><a href="#popZipcode" class="button h50 gray ui-pop-open" onclick="daumPostcode();">주소 찾기</a></span>
+					</div>
+					<div class="input_box">
+						<input type="text" class="input h50" title="주소" placeholder="주소" readonly>
+						<input type="text" class="input h50" title="나머지 주소" placeholder="나머지 주소">
+					</div>
+				</dd>
+			</dl>
+			<hr>
+			<dl class="dl form">
+				<dt><strong>개인정보 수집 및 이용에 동의합니다.</strong></dt>
+				<dd>
+					<textarea class="textarea" readonly>‘삼화페인트공업(주)’(이하 ‘회사’)는 고객님의 개인정보를 중요시하며, “정보통신망 이용촉진 및 정보보호”에 관한 법률을 준수하고 있습니다.
+
+[수집하는 개인정보 항목]
+회사는 사보 발송을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+수집항목: 성함, 전화번호, 주소
+
+[개인정보의 수집 및 이용목적]
+가. 개인식별 및 사보 발송
+
+[개인정보의 보유 및 이용기간]
+이용자의 개인정보는 원칙적으로, 개인정보 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 
+사보 발송 서비스가 종료되거나 해지를 신청하시는 기간까지 보유 및 이용합니다.
+- 해지 신청 : 1544-5357
+
+[개인정보 제3자 제공]
+수탁자 : ******
+위탁하는 업무의 내용 : 사보 발송 및 발송을 위한 시스템 개발/유지보수</textarea>
+					<div class="input_toggle h50">
+						<label>
+							<input type="checkbox" class="chkeckbox">
+							<span class="lbl">동의</span>
+						</label>
+					</div>
+				</dd>
+			</dl>
+			<div class="btn_wrap">
+				<span><button class="button h50 red">사보 무료 신청하기</button></span>
+			</div>	
+		</div>
+		<a href="#" role="button" class="btn_pop_close ui-pop-close">팝업닫기</a>
+	</article>
+</div>
+
+<!-- 주소팝업 -->
+<div id="popZipcode" class="pop_wrap large">
+	<article class="popup">
+		<div class="pop_head">
+			<h1>주소를 <br>검색해주세요.</h1>
+		</div>
+		<div class="pop_cont">
+			<div id="daumZipcode" class="zipcode_wrap"></div>
+		</div>
+		<a href="#" role="button" class="btn_pop_close ui-pop-close">팝업닫기</a>
+	</article>
+</div>
+
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+<!-- <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script> -->
+<script>
+    // 우편번호 찾기 화면을 넣을 element
+	var element_wrap = document.getElementById('daumZipcode');
+
+    function daumPostcode() {
+        // 현재 scroll 위치를 저장해놓는다.
+        var currentScroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("sample3_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample3_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample3_postcode').value = data.zonecode;
+                document.getElementById("sample3_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample3_detailAddress").focus();
+
+                // iframe을 넣은 element를 안보이게 한다.
+                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                element_wrap.style.display = 'none';
+
+                // 우편번호 찾기 화면이 보이기 이전으로 scroll 위치를 되돌린다.
+                document.body.scrollTop = currentScroll;
+            },
+            // 우편번호 찾기 화면 크기가 조정되었을때 실행할 코드를 작성하는 부분. iframe을 넣은 element의 높이값을 조정한다.
+            onresize : function(size) {
+                element_wrap.style.height = size.height+'px';
+            },
+            width : '100%',
+            height : '100%'
+        }).embed(element_wrap);
+
+        // iframe을 넣은 element를 보이게 한다.
+        element_wrap.style.display = 'block';
+	}
+</script>
+</body>
+</html>

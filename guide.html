@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>삼화페인트 모바일</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=375, user-scalable=no">
+
+	<!-- style -->
+	<link rel="stylesheet" href="./static/css/samhwa.css" media="all">
+
+	<!-- javascript -->
+	<script src="./static/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="./static/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="./static/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="./static/js/plugins.js"></script>
+	<script src="./static/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div data-include-html="./include/header.html"></div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="contents">
+		<div class="guide inner">
+			<h3>텍스트</h3>
+			<div class="cont_in">
+				<h4>컬러</h4>
+				<div>
+					<strong>기본컬러{color:#000}</strong>
+					<br>
+					<strong class="fc_black">.fc_black{color:#333}</strong>
+				</div>
+			</div>
+
+			<h3>버튼</h3>
+			<div class="cont_in">
+				<h4>태그 종류
+					<span>(클래스만 유지하면 태그변경해도 무방)</span>
+				</h4>
+				<div>
+					<a href="#" class="button">a 태그</a>
+					<button class="button black">button</button>
+					<input type="button" class="button gray" value="input[button]">
+					<input type="submit" class="button btn_balck" value="input[submit]">
+				</div>
+
+				<h4>높이크기</h4>
+				<div>
+					<a href="#" class="button h36">button h36</a>
+					<a href="#" class="button">기본사이즈</a>
+					<a href="#" class="button h50">button h50</a>
+					<a href="#" class="button h50 red">button h50</a>
+				</div>
+
+				<h4>컬러</h4>
+				<div>
+					<a href="#" class="button">기본컬러</a>
+					<a href="#" class="button disabled">disabled</a>
+					<button class="button" disabled>disabled</button>
+					<br>
+					<br>
+					<a href="#" class="button red">red</a>
+					<a href="#" class="button blue">blue</a>
+					<a href="#" class="button black">black</a>
+					<a href="#" class="button gray">gray</a>
+					<a href="#" class="button gray2">gray</a>
+				</div>
+
+				<h4>round</h4>
+				<div>
+					<a href="#" class="button blue h36 round">round h32</a>
+					<a href="#" class="button round">round</a>
+					<a href="#" class="button red h50 round">round h50</a>
+				</div>
+
+				<h4>t_link</h4>
+
+				<a href="#" class="t_link">
+					<span>아이디/비밀번호를 잊으셨나요?</span>
+				</a>
+				<a href="#" class="t_link2">자동차보수</a>
+
+				<h4>btn_wrap</h4>
+				<div class="btn_wrap">
+					<a href="#" class="button">버튼1</a>
+				</div>
+				<div class="btn_wrap">
+					<a href="#" class="button gray">버튼1</a>
+					<a href="#" class="button black">버튼2</a>
+				</div>
+				<div class="btn_wrap">
+					<span><a href="#" class="button">버튼1</a></span>
+				</div>
+				<div class="btn_wrap">
+					<span><a href="#" class="button gray">버튼1</a></span>
+					<span><a href="#" class="button black">버튼2</a></span>
+				</div>
+			</div>
+			<h3>아이콘</h3>
+			<div class="cont_in">
+				<h4>ico_txt</h4>
+				<div>
+					<i class="ico_txt pink">조색</i>
+					<i class="ico_txt orange">축색</i>
+					<i class="ico_txt yellow">더클래시</i>
+					<i class="ico_txt green">신입</i>
+					<i class="ico_txt blue">경력</i>
+				</div>
+			</div>
+
+			<h3>타이틀</h3>
+			<div class="cont_in">
+				<h1 class="tit_h1">제목 제목</h1>
+				<h2 class="tit_h2">제목 제목</h2>
+				<h3 class="tit_h3">제목 제목</h3>
+				<h4 class="tit_h4">제목 제목</h4>
+				<h5 class="tit_h5">제목 제목</h5>
+			</div>
+
+			<h3>form 태그</h3>
+			<div class="cont_in">
+				<h4>checkbox</h4>
+				<div>
+					<label class="checkbox">
+						<input name="checkbox" type="checkbox" checked="checked">
+						<i></i>
+						<span class="lbl">checkbox(checked)</span>
+					</label>
+					<label class="checkbox">
+						<input name="checkbox" type="checkbox">
+						<i></i>
+						<span class="lbl">checkbox</span>
+					</label>
+					<br>
+					<label class="checkbox">
+						<input name="checkbox" type="checkbox" disabled="disabled">
+						<i></i>
+						<span class="lbl">checkbox(disabled)</span>
+					</label>
+					<br>
+					<label class="checkbox">
+						<input name="checkbox" type="checkbox">
+						<i></i>
+						<span class="blind">선택</span>
+					</label>
+					<br>
+					<label class="checkbox">
+						<span class="lbl">checkbox(right)</span>
+						<input name="checkbox" type="checkbox">
+						<i></i>
+					</label>
+					<br>
+					<label class="checkbox type2">
+						<input name="checkbox" type="checkbox">
+						<i></i>
+						<span class="lbl">checkbox(type2)</span>
+					</label>
+					<br>
+					<label class="checkbox type2">
+						<span class="lbl">checkbox(type2,right)</span>
+						<input name="checkbox" type="checkbox">
+						<i></i>
+					</label>
+				</div>
+
+				<h4>radio</h4>
+				<div>
+					<label class="radio">
+						<input name="radio" type="radio" checked="checked">
+						<i></i>
+						<span class="lbl">radio(checked)</span>
+					</label>
+					<label class="radio">
+						<input name="radio" type="radio">
+						<i></i>
+						<span class="lbl">radio</span>
+					</label>
+					<br>
+					<label class="radio">
+						<input name="radio" type="radio" disabled="disabled">
+						<i></i>
+						<span class="lbl">radio(disabled)</span>
+					</label>
+					<br>
+					<label class="radio">
+						<input name="radio" type="radio">
+						<i></i>
+						<span class="blind">선택</span>
+					</label>
+					<br>
+					<label class="radio">
+						<span class="lbl">radio(right)</span>
+						<input name="radio" type="radio">
+						<i></i>
+					</label>
+				</div>
+
+				<h4>switch</h4>
+				<div>
+					<label class="switch">
+						<input type="checkbox" name="" id="">
+						<span><span class="blind">설정</span></span>
+					</label>
+					<br>
+					<label class="switch">
+						<input type="checkbox" name="" id="">
+						<span>설정</span>
+					</label>
+					<br>
+					<label class="switch">
+						<input type="checkbox" name="" id="">
+						<span>
+							<span class="on">설정</span>
+							<span class="off">미설정</span>
+						</span>
+					</label>
+				</div>
+
+				<h4>기본 select</h4>
+				<select class="select" title="옵션선택">
+					<option value="">기본셀렉트</option>
+					<option value="">옵션1</option>
+					<option value="">옵션2</option>
+					<option value="">옵션3</option>
+				</select>
+				<br><br>
+				<select class="select" title="옵션선택" disabled="disabled">
+					<option value="">disabled</option>
+					<option value="">옵션1</option>
+					<option value="">옵션2</option>
+					<option value="">옵션3</option>
+				</select>
+				<h4>select_list</h4>
+				<div class="select_list">
+					<a href="#">선택항목</a>
+					<ul>
+						<li><a href="#" class="option">메뉴1</a></li>
+						<li><a href="#" class="option">메뉴2</a></li>
+						<li><a href="#" class="option">메뉴3</a></li>
+						<li><a href="#" class="option">메뉴4</a></li>
+						<li><a href="#" class="option">메뉴5</a></li>
+					</ul>
+				</div>
+				<br><br>
+				<div class="select_list">
+					<a href="#">패밀리 사이트</a>
+					<ul>
+						<li><a href="//dev-www.shinhancard.com/" class="option link" target="_blank" title="새창열림">신한카드</a></li>
+						<li><a href="//devprj-m.shinhancard.com/" class="option link" target="_blank" title="새창열림">신한카드 모바일</a></li>
+					</ul>
+				</div>
+
+				<h4>input</h4>
+				<div>
+					<input class="input" type="text" placeholder="기본 input" title="내용입력">
+					<br><br>
+					<input class="input readonly" type="text" placeholder="readonly" title="내용입력" readonly="readonly">
+					<br><br>
+					<input class="input" type="text" placeholder="disabled" title="내용입력" disabled="disabled">
+				</div>
+				<h4>input_tbl</h4>
+				<div class="input_tbl">
+					<div>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+					</div>
+				</div>
+				<div class="input_tbl">
+					<div>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+					</div>
+				</div>
+				<div class="input_tbl col2">
+					<div>
+						<span>
+							<select class="select">
+								<option value="">선택</option>
+							</select>
+						</span>
+						<span class="wid2"><input class="input" type="text" title="내용입력"></span>
+					</div>
+				</div>
+				<div class="input_tbl">
+					<div>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+					</div>
+				</div>
+				<div class="input_tbl col3">
+					<div>
+						<span class="wid2"><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+						<span><input class="input" type="text" title="내용입력"></span>
+					</div>
+				</div>
+				<div class="input_tbl col2">
+					<div>
+						<span class="wid3"><input class="input" type="text" title="내용입력"></span>
+						<span><button class="button">확인</button></span>
+					</div>
+				</div>
+
+				<h4>input_flex</h4>
+				<div class="input_flex">
+					<span><input class="input" type="text" title="내용입력"></span>
+					<span><input class="input" type="text" title="내용입력"></span>
+				</div>
+				<div class="input_flex">
+					<span>
+						<select class="select">
+							<option value="">선택</option>
+						</select>
+					</span>
+					<span class="wid2"><input class="input" type="text" title="내용입력"></span>
+				</div>
+				<div class="input_flex">
+					<span class="wid3"><input class="input" type="text" title="내용입력"></span>
+					<span><button class="button">확인</button></span>
+				</div>
+
+				<h4>input_btn</h4>
+				<div class="input_email">
+					<span><input class="input" type="text" title="내용입력"></span>
+					<span><input class="input" type="text" title="내용입력"></span>
+					<div>
+						<select class="select">
+							<option value="">선택</option>
+						</select>
+					</div>
+				</div>
+
+				<h4>input_btn</h4>
+				<div class="input_btn">
+					<div>
+						<input id="inpTxt2" class="input" type="text" title="내용입력">
+					</div>
+					<div>
+						<button class="button" onclick="txtAlert('#inpTxt2','내용을 입력해주세요')">확인</button>
+					</div>
+				</div>
+				
+				<h4>input_add_txt</h4>
+				<div class="input_add_txt">
+					<span><input class="input" type="tel" value="12,000"></span>
+					<sub>원</sub>
+				</div>
+				<div class="input_add_txt">
+					<span><input class="input" type="tel" value="36"></span>
+					<sub>개월</sub>
+				</div>
+				<h4>input_del</h4>
+				<div class="input_box">
+					<input class="input" type="text" value="입력창 초기화 버튼">
+					<a href="#" class="input_del">입력창 초기화</a>
+				</div>
+
+				<h4>input:file</h4>
+				<div>
+					<input class="input" type="file" placeholder="내용입력" title="파일첨부">
+
+					<div class="input_file mt10">
+						<span><input class="input" type="text" placeholder="첨부파일을 선택해주세요." title="첨부파일 선택"></span>
+						<span class="btn_file">
+							<a href="#" class="button gray">파일 찾기</a>
+							<input type="file" placeholder="내용입력" title="파일첨부">
+						</span>
+					</div>
+				</div>
+
+				<h4>textarea</h4>
+				<textarea class="textarea">내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용
+					내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 </textarea>
+				<br>
+				<br>
+				<textarea class="textarea readonly" readonly>내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용
+					내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 </textarea>
+				<br>
+				<br>
+				<textarea class="textarea" disabled>내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 내용
+					내용 내용 내용 내용 내용 내용 내용 내용 내용 내용 </textarea>
+			</div>
+			<h3>팝업</h3>
+			<div class="cont_in">
+				<h4>호출방법</h4>
+				<p>
+					<a href="#popup" class="button ui-pop-open">
+						<strong class="t_blue">.ui-pop-open</strong> 클래스로 열기</a>
+					<br>:a태그를 사용하여 href에
+					<strong class="t_red">대상 팝업의 id 지정</strong>
+					<br>&lt;a href="#popup" class="button ui-pop-open"&gt;버튼&lt;/a&gt;
+					<br>
+					<br>
+					<button class="button" onclick="popOpen('#popup')">
+						<strong class="t_blue">popOpen()</strong> 함수로 열기</button>
+					<br>:
+					<strong class="t_red">popOpen(대상 팝업의 id)</strong> 혹은
+					<strong class="t_red">popOpen(대상 팝업의 id, 팝업 닫을때 포커스 줄 대상)</strong>
+					<br>&lt;button class="button" onclick="popOpen('#popup',this)"&gt;버튼&lt;/button&gt;
+				</p>
+				<h4>팝업종류</h4>
+				<div class="button_wrap btn3" style="margin-top:0;">
+					<a href="#popup" class="button ui-pop-open">기본 팝업 확인</a>
+					<a href="#popLarge" class="button gray ui-pop-open">큰 팝업 확인</a>
+					<a href="#popSmall" class="button black ui-pop-open">작은 팝업 확인</a>
+				</div>
+			</div>
+			<h3>loading:로딩창</h3>
+			<div class="cont_in">
+				<div class="button_wrap btn2" style="margin-top:0;">
+					<button class="button" onclick="loadingShow('화면 로딩중 입니다.')">로딩창 확인</button>
+					<button class="button black" onclick="loadingHide()" style="z-index: 101;">로딩창 닫기</button>
+				</div>
+				<br>:로딩창 호출 함수 -
+				<strong class="t_red">loadingShow()</strong> 혹은
+				<strong class="t_red">loadingShow('화면 로딩중 입니다.')</strong>
+				<br>:로딩창 닫기 함수 -
+				<strong class="t_red">loadingHide()</strong>
+			</div>
+			<h3>list</h3>
+			<h4>faq_list</h4>
+			<ul class="faq_list">
+				<li>
+					<a href="#">질문질문질문질문질문질문 질문질문질문질문?</a>
+					<div>대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 </div>
+				</li>
+				<li>
+					<a href="#">질문질문질문질문질문질문 질문질문질문질문?</a>
+					<div>대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 대답대답대답 </div>
+				</li>
+			</ul>
+			<h4>dot_list</h4>
+			<ul class="dot_list">
+				<li>텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트</li>
+				<li>텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트</li>
+				<li>텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트 텍스트</li>
+			</ul>
+		</div>
+	</section>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div data-include-html="./include/footer.html"></div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+
+<div id="popup" class="pop_wrap">
+	<article class="popup">
+		<div class="pop_head">
+			<h1>팝업 타이틀 팝업 타이틀 팝업 타이틀 </h1>
+		</div>
+		<div class="pop_cont">
+			텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br>
+		</div>
+		<div class="pop_btn btn_wrap">
+			<span><a href="#" class="button h50 gray">확인</a></span>
+		</div>
+		<a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+	</article>
+</div>
+
+<div id="popLarge" class="pop_wrap large">
+	<article class="popup">
+		<div class="pop_head">
+			<h1>팝업 타이틀 팝업 타이틀 팝업 타이틀 팝업 타이틀 팝업 타이틀 팝업 타이틀 </h1>
+		</div>
+		<div class="pop_cont">
+			텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트 텍스트
+			<br>
+		</div>
+		<div class="pop_btn btn_wrap">
+			<span><a href="#" class="button h50 gray">확인</a></span>
+		</div>
+		<a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+	</article>
+</div>
+
+<div id="popSmall" class="pop_wrap small">
+	<article class="popup">
+		<div class="pop_cont">
+			텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트
+			<br> 텍스트 텍스트 텍스트 텍스트
+		</div>
+		<div class="pop_btn btn_wrap">
+			<span><a href="#" class="button gray2 ui-pop-close">취소</a></span>
+			<span><a href="#" class="button gray">확인</a></span>
+		</div>
+	</article>
+</div>
+</body>
+</html>

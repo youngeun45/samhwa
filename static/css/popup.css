@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* popup layout */
+body.pop_open{overflow:hidden;}
+
+.pop_wrap{display:none;position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.7);overflow:auto;z-index:50;}
+
+.pop_wrap.small{padding:20px 60px;}
+.popup{position:relative;top:50%;padding-top:50px;background:#f5f5f5;box-sizing:border-box;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.popup .btn_pop_close{display:block;position:absolute;right:23px;top:0px;width:30px;height:30px;background:url(../images/common/btn_pop_close.png) no-repeat center center;background-size:17px auto;text-indent:-9999em;overflow:hidden;-webkit-transition:transform 1s ease-in-out;transition:transform 1s ease-in-out;}
+.popup .btn_pop_close:hover{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+.popup .pop_head{padding:0px 30px 8px;}
+.popup .pop_head h1{font-size:34px;line-height:1.2}
+.popup .pop_cont{padding:0px 30px 30px;}
+.popup .pop_cont.bottom_btn{padding-bottom:80px;}
+.popup .pop_head + .pop_cont{padding-top:48px;}
+.popup .pop_cont + .btn_wrap{margin-top:0;position:absolute;left:0;width:100%;bottom:0;}
+
+
+.pop_wrap.large .popup{min-height:100%;top:0;padding-top:65px;-webkit-transform:translateY(0);transform:translateY(0);}
+.pop_wrap.large .btn_pop_close{top:20px;}
+.pop_wrap.small .popup{padding-top:0;background:#f5f5f5;}
+.pop_wrap.small .pop_head{padding:20px 30px;background:#fff;}
+.pop_wrap.small .pop_head h1{font-size:18px;}
+.pop_wrap.small .pop_cont{padding:30px;}
+.pop_wrap.small .btn_pop_close{top:15px;}
+
+.pop_wrap.transparent .popup{background:transparent;padding-top:0;}
+.pop_wrap.transparent .pop_cont{padding-top:0;padding-bottom:0;}
+.pop_wrap.transparent .btn_pop_close{top:-50px;background-image:url(../images/common/btn_pop_close_w.png);}
+.popup .today_chk{overflow:hidden;margin:10px -15px 0;;}
+.popup .today_chk .btn_pop_close{position:static;float:right;}
+
+/* popup component */
+.popup .input,
+.popup .textarea{border-color:#f5f5f5;}
+.popup .input:focus{border-color:#f5f5f5;border-bottom-color:#4b4b4b}
+.popup .input[readonly]{border-color:#f5f5f5;}
+.popup .input_toggle input + .lbl{border-color:#f5f5f5;}
+
+/* popup contents */
+.zipcode_wrap{border:1px solid #000;min-height:400px;background:#fff;}
+.pop_video_cont{color:#fff;margin-top:28px;}
+.pop_video_cont .tit{font-size:18px;}
+.pop_video_cont .date{font-size:12px;margin-top:10px;}

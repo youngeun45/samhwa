@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>삼화페인트 모바일</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=375, user-scalable=no">
+
+	<!-- style -->
+	<link rel="stylesheet" href="../static/css/samhwa.css" media="all">
+
+	<!-- javascript -->
+	<script src="../static/js/lib/jquery-1.12.4.min.js"></script>
+	<script src="../static/js/lib/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../static/js/lib/html5Shiv.js"></script>
+	<![endif]-->
+	<script src="../static/js/plugins.js"></script>
+	<script src="../static/js/ui-front.js"></script>
+	<!-- //javascript -->
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div data-include-html="../include/header.html"></div>
+	<!-- //header -->
+
+	<!-- contents -->
+	<section id="contents">
+		<div id="pageTop" class="visual">
+			<div class="bg" style="background-image:url();"></div>
+			<div>
+				<h2 id="pageTit">인재상</h2>
+				<div class="page_txt">삼화는 창업이념 구현과 경영환경에 <br>대응할 수 있는 인재상을 원합니다.</div>
+			</div>
+		</div>
+		<div class="inner gray">
+			<div class="talent_wrap">
+				<div class="top_area">
+					<h3 class="f_mont">
+						<span>21 Global Leader</span>
+						<strong>Vision <em>Samhwa</em></strong>
+					</h3>
+					<p>삼화가 강조하는 인재상은 창업이념 구현과<br/> 21세기 경영환경에 적극 대응할 수 있는<br/>사람이어야 합니다.</p>
+				</div>
+				<ul>
+					<li>
+						<div class="img_box"><img src="../static/images/contents/img_talent_01.jpg" alt=""></div>
+						<div class="txt_box">
+							<h4>삼화인은 고객에게 봉사하는 인재이어야 합니다.<button class="btn_open_talent">인재상 상세글 열기</button></h4>
+							<p>고객을 위하여 노력하는 삼화인은 자신의 고객이 누구이며, 그들의 요구가 무엇인지를 알고, 고객의 입장에 서서 함께 희로애락을 느끼고, 이를 기업경영에 반영할 수 있는 사람입니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="img_box"><img src="../static/images/contents/img_talent_02.jpg" alt=""></div>
+						<div class="txt_box">
+							<h4>삼화인은 적극적으로 생각하고 실천하는 인재이어야 합니다.<button class="btn_open_talent">인재상 상세글 열기</button></h4>
+							<p>기업을 영속적으로 발전시킬 수 있는 원동력은 주어진 일에 대하여 적극적인 사고를 갖고 행동할 수 있는 사람입니다. <br>따라서 삼화인은 맡은 바 소임에 대하여 적극적으로 생각하고 실천할 수 있는 사람입니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="img_box"><img src="../static/images/contents/img_talent_03.jpg" alt=""></div>
+						<div class="txt_box">
+							<h4>삼화인은 팀웍을 발휘하는 <br/>인재이어야 합니다.<button class="btn_open_talent">인재상 상세글 열기</button></h4>
+							<p>조직의 목표를 성취하고자 노력하는 삼화인은 남의 사고와 가치를 존중하고 협력과 협조를 바탕으로 자발적인 노력을 경주할 수 있는 사람입니다. </p>
+						</div>
+					</li>
+					<li>
+						<div class="img_box"><img src="../static/images/contents/img_talent_04.jpg" alt=""></div>
+						<div class="txt_box">
+							<h4>삼화인은 창의적인 사고를 <br/>지닌 인재이어야 합니다.<button class="btn_open_talent">인재상 상세글 열기</button></h4>
+							<p>창조성이 풍부한 삼화인은 미래 정보화 사회의 주역이 되고자, 기존의 틀에 얽매이기 보다는 문제의식을 갖고 스스로 업무에서 새로운 도전과개선의 기능성을 찾을 수 있는 유연한 사고방식을 갖추고, 항상 생각하며 개선하려는 사람입니다.</p>
+						</div>
+					</li>
+					<li>
+						<div class="img_box"><img src="../static/images/contents/img_talent_05.jpg" alt=""></div>
+						<div class="txt_box">
+							<h4>삼화인은 끊임없이 자기개발을 <br/>하는 인재이어야 합니다.<button class="btn_open_talent">인재상 상세글 열기</button></h4>
+							<p>국제화를 지향하는 삼화인은 다른 세계에 대한 폭넓은 이해와 적응력을 키워, 자기 분야에서 최고가 되겠다는 도전 의식을 갖고, 부단히 노력하는 사람입니다. </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<div data-include-html="../include/footer.html"></div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+<script>
+$(function(){
+	$('.btn_open_talent').each(function(){
+		$(this).click(function(){
+			$(this).parents('li').toggleClass('on');
+			//$(this).parents('li').find('p').slideToggle();
+		})
+	})
+})
+</script>
+</body>
+</html>
